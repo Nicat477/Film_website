@@ -89,6 +89,7 @@ body{
     border-radius: 50%;
     right:1px;
     cursor: pointer;
+    transition: .5s ease all;
 }
 .profile-text-container{
     display: flex;
@@ -164,7 +165,7 @@ body{
     align-items: center;
     column-gap:30px;
     transform: translateX(0);
-    transition: 1s ease ease-in-out;
+    transition: 1s all ease-in-out;
 }
 .movie-item{
     position: relative;
@@ -231,4 +232,42 @@ body{
 }
 .arrow:hover{
     opacity: 1;
+}
+.container.active{
+    background-color: white;
+    color:black;
+}
+.navbar.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.sidebar i.active{
+    color:black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+.movie-list-filter select.active{
+    background-color: white;
+    color:black;
+}
+.movie-list-title.active{
+    color: black;
+}
+@media only screen and (max-width:800px){
+    .menu-container{
+        display: none;
+    }
+    .featured-title{
+        width:200px;
+    }
+    .featured-buttons
+    
 }
