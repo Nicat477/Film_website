@@ -118,8 +118,9 @@ body{
     color:black;
 }
 .featured-buttons{
-    column-gap:20px;
+    gap:20px;
     display: flex;
+    flex-wrap: wrap;
 }
 .featured-buttons button{
     padding:10px 25px;
@@ -268,6 +269,16 @@ body{
     .featured-title{
         width:200px;
     }
-    .featured-buttons
-    
+    .featured-content{
+        height:40vh;
+    }
+    .featured-desc{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width:200px;
+        padding:0;
+    }
+  
 }
