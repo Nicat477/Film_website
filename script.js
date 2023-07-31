@@ -25,3 +25,25 @@ ball.addEventListener("click",function(){
     items.forEach((item)=>item.classList.toggle("active"));
 
 })
+
+const filterSelect = document.getElementById('myFilter');
+const listItems = document.querySelectorAll('.movie-list li');
+
+// Filtering function
+function filterMovies() {
+  const selectedValue = filterSelect.value;
+
+  listItems.forEach((item) => {
+    if (selectedValue === 'all' || item.classList.contains(selectedValue)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+// Event listener for select change
+filterSelect.addEventListener('change', filterMovies);
+
+// Call the filtering function on page load to show all movies
+filterMovies();

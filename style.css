@@ -282,3 +282,11 @@ body{
     }
   
 }
+.movie-list li {
+    display: block;
+  }
+  
+  .movie-list li:not([style="display: block"]) {
+    display: none;
+  }
+  
