@@ -12,7 +12,13 @@
     <div class="navbar">
         <div class="navbar-wrapper">
             <div class="logo-wrapper">
-                <h1 class="logo">LOGO</h1>
+                <a href="index.html" class="logo-link">
+                    <h1 class="logo">MOVIE</h1>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search movies...">
+                <i class="bi bi-search search-icon"></i>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
@@ -20,7 +26,7 @@
                     <li class="menu-list-item">Films</li>
                     <li class="menu-list-item">Series</li>
                     <li class="menu-list-item">My List</li>
-                    <li class="menu-list-item">Popular</li>
+                    
                 </ul>
             </div>
             <div class="profile-container">
@@ -38,8 +44,9 @@
         </div>
     </div>
     <div class="sidebar">
-        <i class="bi bi-search"></i>
-        <i class="bi bi-house-door-fill"></i>
+        <label for="search-input"><i class="bi bi-search"></i></label>
+        
+        <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
         <i class="bi bi-people-fill"></i>
         <i class="bi bi-bookmarks-fill"></i>
         <i class="bi bi-hourglass-top"></i>
@@ -49,128 +56,38 @@
     <div class="container">
         <div class="content-wrapper">
             <div class="featured-content">
-                <img src="img/spiderman-title.png" class="featured-title" alt="">
+                <!-- <img src="img/spiderman-title.png" class="featured-title" alt="">
                 <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet tenetur vero totam eos libero pariatur iusto, unde aliquid ab labore, accusamus id eius corrupti doloremque, consectetur iure minima assumenda! Atque itaque repellendus possimus odio cumque autem quidem omnis nobis? Sed itaque laudantium neque dignissimos? Corrupti, quod facere. Delectus, tempore!</p>
                 <div class="featured-buttons">
                     <button class="play-button"> <i class="bi bi-play-circle"></i>Play</button>
                     <button class="info-button"><i class="bi bi-info-circle"></i>More Information</button>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="movie-list-filter">
             <select name="" id="myFilter">
-                <option value="all">All</option>
-                <option value="action">Action</option>
-                <option value="animation">Animation</option>
-                <option value="documentary">Documentary</option>
-                <option value="comedy">Comedy</option>
-                <option value="science-fiction">Science fiction</option>
+                <option value="default">Sort by</option>
+                <option value="vote_average">Average Rating</option>
+                <option value="release_date">Release Date</option>
+                <option value="popularity">Popularity</option>
             </select>
         </div>
         <div class="movie-list-container">
             <h1 class="movie-list-title">Popular</h1>
             <div class="movie-list-wrapper">
-                <ul class="movie-list" >
-                    <li class="movie-item action all">
-                        <img  class="movie-item-img" src="img/f1.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">SPIDER-MAN</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item action all">
-                        <img  class="movie-item-img" src="img/f2.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">HULK</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item animation all">
-                        <img  class="movie-item-img" src="img/f3.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">G.O.R.A</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item documentary all">
-                        <img  class="movie-item-img" src="img/f4.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">DARADEVIL</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item science-fiction all">
-                        <img  class="movie-item-img" src="img/f5.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">DARADEVIL</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item science-fiction all">
-                        <img  class="movie-item-img" src="img/f6.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">DARADEVIL</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="movie-item comedy all">
-                        <img  class="movie-item-img" src="img/f7.jpg" alt="">
-                        <div class="movie-item-info">
-                            <span class="movie-item-title">DARADEVIL</span>
-                            <div class="movie-item-buttons">
-                                <i class="bi bi-play-circle-fill"></i>
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                <i class="bi bi-hand-thumbs-down-fill"></i>
-                                <i class="bi bi-plus-circle-fill"></i>
-                                
-                            </div>
-                        </div>
-                    </li>
+                <i class="bi bi-chevron-left arrow"></i>
+                <ul class="movie-list" id="popular-movies">
+                    <!-- Movies will be loaded here -->
                 </ul>
                 <i class="bi bi-chevron-right arrow"></i>
             </div>
         </div>
         <div class="movie-list-container">
-            <h1 class="movie-list-title">What is on the agenda</h1>
+            <h1 class="movie-list-title">Now Playing</h1>
             <div class="movie-list-wrapper">
-                <ul class="movie-list" >
-                    <li class="movie-item action all">
+                <i class="bi bi-chevron-left arrow"></i>
+                <ul class="movie-list" id="now-playing-movies">
+                    <!-- <li class="movie-item action all">
                         <img  class="movie-item-img" src="img/f1.jpg" alt="">
                         <div class="movie-item-info">
                             <span class="movie-item-title">SPIDER-MAN</span>
@@ -260,16 +177,17 @@
                                 
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <i class="bi bi-chevron-right arrow"></i>
             </div>
         </div>
         <div class="movie-list-container">
-            <h1 class="movie-list-title">New releases</h1>
+            <h1 class="movie-list-title">Upcoming</h1>
             <div class="movie-list-wrapper">
-                <ul class="movie-list" >
-                    <li class="movie-item action all">
+                <i class="bi bi-chevron-left arrow"></i>
+                <ul class="movie-list" id="upcoming-movies">
+                    <!-- <li class="movie-item action all">
                         <img  class="movie-item-img" src="img/f1.jpg" alt="">
                         <div class="movie-item-info">
                             <span class="movie-item-title">SPIDER-MAN</span>
@@ -359,12 +277,80 @@
                                 
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <i class="bi bi-chevron-right arrow"></i>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2 class="logo">MOVIE</h2>
+                    <p>The best movie streaming platform</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">My List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Download</h3>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <i class="bi bi-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="app-button">
+                            <i class="bi bi-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MOVIE. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="api.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>

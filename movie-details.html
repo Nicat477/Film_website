@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Movie Details</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo-wrapper">
+                <a href="index.html" class="logo-link">
+                    <h1 class="logo">MOVIE</h1>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search movies...">
+                <i class="bi bi-search search-icon"></i>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Main Page</li>
+                    <li class="menu-list-item">Films</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">My List</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img src="img/profile.jpg" class="profile-picture" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">My Account</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="toggle">
+                    <i class="bi bi-moon-fill toggle-icon"></i>
+                    <i class="bi bi-brightness-high-fill toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="bi bi-search"></i>
+        <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+        <i class="bi bi-people-fill"></i>
+        <i class="bi bi-bookmarks-fill"></i>
+        <i class="bi bi-hourglass-top"></i>
+        <i class="bi bi-cart-fill"></i>
+        <i class="bi bi-gear-fill"></i>
+    </div>
+    <div class="container">
+        <div class="movie-details-wrapper">
+            <div class="movie-details-content">
+                <div class="movie-poster">
+                    <img src="img/f1.jpg" alt="Movie Poster">
+                </div>
+                <div class="movie-info">
+                    <h1 class="movie-title">SPIDER-MAN</h1>
+                    <div class="movie-meta">
+                        <span class="movie-rating">
+                            <i class="bi bi-star-fill"></i>
+                            8.5/10
+                        </span>
+                        <span class="movie-duration">2h 28min</span>
+                        <span class="movie-year">2023</span>
+                        <span class="movie-genre">Action, Adventure</span>
+                    </div>
+                    <div class="movie-description">
+                        <p>After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.</p>
+                    </div>
+                    
+                    <div class="movie-actions">
+                        <button class="play-button">
+                            <i class="bi bi-play-circle"></i>
+                            Watch Now
+                        </button>
+                        <button class="trailer-button">
+                            <i class="bi bi-film"></i>
+                            Watch Trailer
+                        </button>
+                        <button class="add-list-button">
+                            <i class="bi bi-plus-circle"></i>
+                            Add to List
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2 class="logo">MOVIE</h2>
+                    <p>The best movie streaming platform</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">My List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Download</h3>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <i class="bi bi-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="app-button">
+                            <i class="bi bi-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MOVIE. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+    <script src="movie-details.js"></script>
+</body>
+</html> 
